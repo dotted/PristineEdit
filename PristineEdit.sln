@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop Client", "Desktop Client", "{85877F04-00E4-482A-B418-7BEBECABE750}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4CA0E95E-C4B3-4E28-8CB6-C940845D9749}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{781924F3-0AC1-4470-8353-26C5118334CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{34E9460F-BA98-4A11-81AE-06FEC91D75B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{83097821-DC82-44A1-B821-B2EFCF857516}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{315AF74B-221E-490C-A55E-087299DA55E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5F83311E-281F-44BC-958E-8149FF2AA8E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Common.Interfaces", "Common\Source\BadMechanics.PristineEdit.Common.Interfaces\BadMechanics.PristineEdit.Common.Interfaces.csproj", "{7573047D-CDA9-4DB7-B36C-356A1AE153ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8D28B5CD-F442-42C9-8801-CBF2E3981B43}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.DesktopClient", "Desktop Client\Source\BadMechanics.PristineEdit.DesktopClient\BadMechanics.PristineEdit.DesktopClient.csproj", "{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.DesktopClient.Tests", "Desktop Client\Tests\BadMechanics.PristineEdit.DesktopClient.Tests\BadMechanics.PristineEdit.DesktopClient.Tests.csproj", "{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CA0E95E-C4B3-4E28-8CB6-C940845D9749} = {85877F04-00E4-482A-B418-7BEBECABE750}
+		{34E9460F-BA98-4A11-81AE-06FEC91D75B3} = {85877F04-00E4-482A-B418-7BEBECABE750}
+		{83097821-DC82-44A1-B821-B2EFCF857516} = {781924F3-0AC1-4470-8353-26C5118334CD}
+		{315AF74B-221E-490C-A55E-087299DA55E6} = {781924F3-0AC1-4470-8353-26C5118334CD}
+		{7573047D-CDA9-4DB7-B36C-356A1AE153ED} = {5F83311E-281F-44BC-958E-8149FF2AA8E4}
+		{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2} = {34E9460F-BA98-4A11-81AE-06FEC91D75B3}
+		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC} = {4CA0E95E-C4B3-4E28-8CB6-C940845D9749}
+	EndGlobalSection
+EndGlobal
