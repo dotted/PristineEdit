@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7573047D-CDA9-4DB7-B36C-356A1AE153ED}</ProjectGuid>
+    <ProjectGuid>{729D1838-2455-4702-987F-2B9B207D4181}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BadMechanics.PristineEdit.Common.Interfaces</RootNamespace>
-    <AssemblyName>BadMechanics.PristineEdit.Common.Interfaces</AssemblyName>
+    <RootNamespace>BadMechanics.PristineEdit.Common.Data</RootNamespace>
+    <AssemblyName>BadMechanics.PristineEdit.Common.Data</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,14 +35,13 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\BadMechanics.PristineEdit.Common.Data\BadMechanics.PristineEdit.Common.Data.csproj">
-      <Project>{729d1838-2455-4702-987f-2b9b207d4181}</Project>
-      <Name>BadMechanics.PristineEdit.Common.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPlugin.cs" />
-    <Compile Include="IStorage.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="DocumentFactory.cs" />
+    <Compile Include="FileTypes\CsharpDocument.cs" />
+    <Compile Include="FileTypes\PlainTextDocument.cs" />
+    <Compile Include="MimeTypeMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

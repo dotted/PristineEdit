@@ -1,27 +1,25 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IPlugin.cs" company="Bad Mechanics">
+// <copyright file="DocumentFactory.cs" company="Bad Mechanics">
 //   Copyright © 2014 Bad Mechanics. All Rights Reserved.
 // </copyright>
 // <summary>
-//   Defines the IPlugin type.
+//   The document factory.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace BadMechanics.PristineEdit.Common.Interfaces
+namespace BadMechanics.PristineEdit.Common.Data
 {
-    /// <summary>
-    /// The Plugin interface.
-    /// </summary>
-    public interface IPlugin
-    {
-        /// <summary>
-        /// Gets the name.
-        /// </summary>
-        string Name { get; }
+    using System.Linq;
 
-        /// <summary>
-        /// The do.
-        /// </summary>
-        void Do();
+    /// <summary>
+    /// The document factory.
+    /// </summary>
+    public static class DocumentFactory
+    {
+        public static Document GetDocument(string filePath)
+        {
+            var explodedFilePath = filePath.Split('.');
+            
+        }
     }
 }
