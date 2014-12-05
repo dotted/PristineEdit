@@ -10,20 +10,27 @@
 namespace BadMechanics.PristineEdit.Common.Data.FileTypes
 {
     using System.IO;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// The C# document.
     /// </summary>
     public class CsharpDocument : Document
     {
+        public CsharpDocument(Task<Stream> backingStream)
+            : base(backingStream.Result)
+        {
+            
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="CsharpDocument"/> class.
         /// </summary>
-        /// <param name="backingStream">
-        /// The backing stream.
+        /// <param name="document">
+        /// The document.
         /// </param>
-        public CsharpDocument(Stream backingStream)
-            : base(backingStream)
+        public CsharpDocument(Document document)
+            : base(document.Stream)
         {
             
         }

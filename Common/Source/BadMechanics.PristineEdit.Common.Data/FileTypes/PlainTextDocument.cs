@@ -10,6 +10,7 @@
 namespace BadMechanics.PristineEdit.Common.Data.FileTypes
 {
     using System.IO;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// The plain text document.
@@ -22,8 +23,20 @@ namespace BadMechanics.PristineEdit.Common.Data.FileTypes
         /// <param name="backingStream">
         /// The backing stream.
         /// </param>
-        public PlainTextDocument(Stream backingStream)
+        public PlainTextDocument(Task<Stream> backingStream)
             : base(backingStream)
+        {
+
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PlainTextDocument"/> class.
+        /// </summary>
+        /// <param name="document">
+        /// The document.
+        /// </param>
+        public PlainTextDocument(Document document)
+            : base(document.Stream)
         {
 
         }
