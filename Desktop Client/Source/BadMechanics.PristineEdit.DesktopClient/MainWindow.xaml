@@ -1,17 +1,16 @@
 ﻿<Window x:Class="BadMechanics.PristineEdit.DesktopClient.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:BadMechanics.PristineEdit.DesktopClient.ViewModels"
         Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
     <Grid>
-        <RichTextBox x:Name="TextBoxMain"  AcceptsReturn="True" Margin="10,10,121,10" >
-            <FlowDocument>
-                <Paragraph>
-                    <Run></Run>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>    
-            <Button x:Name="Button_Open" Content="Open" Margin="401,78,10,178" />
-        <Button x:Name="Button_Save" Content="Save" Margin="401,146,10,110" />
+        <TextBox x:Name="TextBoxMain" TextWrapping="Wrap" AcceptsReturn="True" Margin="10,10,121,10" Text="{Binding Text}" />
+
+        <Button x:Name="Button_Open"  Content="Open" Margin="401,78,10,178" Command="{Binding OpenCommand}"/>
+        <Button x:Name="Button_Save" Content="Save" Margin="401,146,10,110" Command="{Binding SaveCommand}" />
         <Button x:Name="Button_New" Content="New" Margin="401,10,10,246" />
     </Grid>
 </Window>
