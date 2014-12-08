@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{20B3CA42
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Common.Data", "Common\Source\BadMechanics.PristineEdit.Common.Data\BadMechanics.PristineEdit.Common.Data.csproj", "{729D1838-2455-4702-987F-2B9B207D4181}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Common.Data.Tests", "Common\Tests\BadMechanics.PristineEdit.Common.Data.Tests\BadMechanics.PristineEdit.Common.Data.Tests.csproj", "{5AF91B52-C7BA-4985-BB16-E4C5AE566807}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{729D1838-2455-4702-987F-2B9B207D4181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{729D1838-2455-4702-987F-2B9B207D4181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{729D1838-2455-4702-987F-2B9B207D4181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF91B52-C7BA-4985-BB16-E4C5AE566807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF91B52-C7BA-4985-BB16-E4C5AE566807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF91B52-C7BA-4985-BB16-E4C5AE566807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF91B52-C7BA-4985-BB16-E4C5AE566807}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +93,6 @@ Global
 		{1B3070A8-C42E-4551-9A05-893B6528D944} = {5F83311E-281F-44BC-958E-8149FF2AA8E4}
 		{20B3CA42-C724-4752-A7AF-A7367C62D8E2} = {5F83311E-281F-44BC-958E-8149FF2AA8E4}
 		{729D1838-2455-4702-987F-2B9B207D4181} = {1B3070A8-C42E-4551-9A05-893B6528D944}
+		{5AF91B52-C7BA-4985-BB16-E4C5AE566807} = {20B3CA42-C724-4752-A7AF-A7367C62D8E2}
 	EndGlobalSection
 EndGlobal
