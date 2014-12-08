@@ -23,6 +23,8 @@ namespace BadMechanics.PristineEdit.Common.Data
         /// </summary>
         private readonly Task<Stream> backingStream;
 
+        private Encoding encoding;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Document"/> class.
         /// </summary>
@@ -32,11 +34,6 @@ namespace BadMechanics.PristineEdit.Common.Data
         protected Document(Task<Stream> backingStream)
         {
             this.backingStream = backingStream;
-
-            using (var sr = new StreamReader(backingStream.Result, detectEncodingFromByteOrderMarks: true))
-            {
-                this.Encoding = sr.CurrentEncoding;
-            }
         }
 
         /// <summary>
@@ -53,7 +50,22 @@ namespace BadMechanics.PristineEdit.Common.Data
         /// <summary>
         /// Gets or sets the encoding.
         /// </summary>
-        public Encoding Encoding { get; set; }
+        public Encoding Encoding
+        {
+            get
+            {
+                if (this.encoding == null)
+                {
+                    this.encoding = File.DetectTextEncoding(this.backingStream.Result);
+                }
+                return this.encoding;
+            }
+            set
+            {
+                // TODO: actually convert the text into the new encoding instead of just changing the property
+                this.encoding = value;
+            }
+        }
 
         /// <summary>
         /// The write.

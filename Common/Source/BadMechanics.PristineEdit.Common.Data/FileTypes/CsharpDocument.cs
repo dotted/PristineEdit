@@ -18,7 +18,7 @@ namespace BadMechanics.PristineEdit.Common.Data.FileTypes
     public class CsharpDocument : Document
     {
         public CsharpDocument(Task<Stream> backingStream)
-            : base(backingStream.Result)
+            : base(backingStream)
         {
             
         }
