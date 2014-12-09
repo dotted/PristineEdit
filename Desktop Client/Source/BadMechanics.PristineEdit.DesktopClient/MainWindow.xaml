@@ -11,6 +11,6 @@
 
         <Button x:Name="Button_Open"  Content="Open" Margin="401,78,10,178" Command="{Binding OpenCommand}"/>
         <Button x:Name="Button_Save" Content="Save" Margin="401,146,10,110" Command="{Binding SaveCommand}" />
-        <Button x:Name="Button_New" Content="New" Margin="401,10,10,246" />
+        <Button x:Name="Button_New" Content="New" Margin="401,10,10,246" Command="{Binding NewCommand}"/>
     </Grid>
 </Window>

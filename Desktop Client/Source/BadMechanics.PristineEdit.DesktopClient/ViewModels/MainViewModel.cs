@@ -18,6 +18,7 @@ namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
         {
             this.SaveCommand = new RelayCommand(this.SaveFile);
             this.OpenCommand = new RelayCommand(this.OpenFile);
+            this.NewCommand = new RelayCommand(this.NewFile);
         }
 
         public Encoding Encoding 
@@ -50,6 +51,7 @@ namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
         }
         public ICommand OpenCommand { get; set; }
         public ICommand SaveCommand { get; set; }
+        public ICommand NewCommand { get; set; }
 
         private async void OpenFile()
         {
@@ -75,6 +77,11 @@ namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
             {
                 await sr.WriteAsync(this.Text.ToString(CultureInfo.InvariantCulture));
             }       
+        }
+
+        private void NewFile()
+        {
+            this.Text = string.Empty;
         }
     }
 }
