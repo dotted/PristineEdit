@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BadMechanics.PristineEdit.DesktopClient
+namespace BadMechanics.PristineEdit.Win32.DesktopClient
 {
     public abstract class ViewModel : INotifyPropertyChanged
     {

@@ -1,4 +1,4 @@
-﻿namespace BadMechanics.PristineEdit.DesktopClient.Services
+﻿namespace BadMechanics.PristineEdit.Data.Services
 {
     using System.IO;
 

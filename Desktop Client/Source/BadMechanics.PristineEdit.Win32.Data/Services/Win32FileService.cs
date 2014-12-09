@@ -1,11 +1,13 @@
-﻿namespace BadMechanics.PristineEdit.DesktopClient.Services.Win32
+﻿namespace BadMechanics.PristineEdit.Win32.Data.Services
 {
     using System;
     using System.IO;
 
+    using BadMechanics.PristineEdit.Data.Services;
+
     using Microsoft.Win32;
 
-    class Win32FileService : IFileService
+    public class Win32FileService : IFileService
     {
         public Stream OpenFile(string defaultExtension, string filter)
         {

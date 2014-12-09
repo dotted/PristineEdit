@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace BadMechanics.PristineEdit.DesktopClient
+namespace BadMechanics.PristineEdit.Win32.DesktopClient
 {
     using System;
     using System.Windows.Input;

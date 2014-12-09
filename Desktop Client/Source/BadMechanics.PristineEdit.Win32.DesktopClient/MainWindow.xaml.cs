@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BadMechanics.PristineEdit.DesktopClient
+namespace BadMechanics.PristineEdit.Win32.DesktopClient
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

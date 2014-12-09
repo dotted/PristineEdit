@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace BadMechanics.PristineEdit.DesktopClient.Tests
+namespace BadMechanics.PristineEdit.Win32.DesktopClient.Tests
 {
     public class Class1
     {

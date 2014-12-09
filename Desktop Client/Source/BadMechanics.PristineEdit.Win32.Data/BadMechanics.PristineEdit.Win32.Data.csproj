@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0736E9F4-0496-4A62-8181-17334E4BC8D4}</ProjectGuid>
+    <ProjectGuid>{610F71C3-2F65-449E-8C81-2890743E60E1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BadMechanics.PristineEdit.Data</RootNamespace>
-    <AssemblyName>BadMechanics.PristineEdit.Data</AssemblyName>
+    <RootNamespace>BadMechanics.PristineEdit.Win32.Data</RootNamespace>
+    <AssemblyName>BadMechanics.PristineEdit.Win32.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,11 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\FileServiceClient.cs" />
-    <Compile Include="Services\IFileService.cs" />
+    <Compile Include="Services\Win32FileService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\Win32\" />
+    <ProjectReference Include="..\BadMechanics.PristineEdit.Data\BadMechanics.PristineEdit.Data.csproj">
+      <Project>{0736E9F4-0496-4A62-8181-17334E4BC8D4}</Project>
+      <Name>BadMechanics.PristineEdit.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

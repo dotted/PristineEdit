@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace BadMechanics.PristineEdit.DesktopClient
+namespace BadMechanics.PristineEdit.Win32.DesktopClient
 {
     /// <summary>
     /// Interaction logic for App.xaml

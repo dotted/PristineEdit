@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-
-namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
+﻿namespace BadMechanics.PristineEdit.Win32.DesktopClient.ViewModels
 {
+    using System.Globalization;
+    using System.IO;
+    using System.Text;
+    using System.Windows.Input;
+
     public class MainViewModel : ViewModel
     {
         private Encoding encoding;

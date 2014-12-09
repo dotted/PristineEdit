@@ -1,10 +1,11 @@
-﻿namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
+﻿namespace BadMechanics.PristineEdit.Win32.DesktopClient.ViewModels
 {
     using System;
     using System.IO;
     using System.Windows.Input;
 
-    using BadMechanics.PristineEdit.DesktopClient.Services;
+    using BadMechanics.PristineEdit.Data.Services;
+    using BadMechanics.PristineEdit.Win32.Data.Services;
 
     class FileDialogViewModel : ViewModel
     {
@@ -22,12 +23,12 @@
 
         private void SaveFile()
         {
-            var fileService = FileServiceFactory.GetFileService();
+            var fileService = new FileServiceClient(new Win32FileService());
             this.Stream = fileService.SaveFile(this.Extension, this.Filter);
         }
         private void OpenFile()
         {
-            var fileService = FileServiceFactory.GetFileService();
+            var fileService = new FileServiceClient(new Win32FileService());
             this.Stream = fileService.OpenFile(this.Extension, this.Filter);        
         }
     }
