@@ -1,6 +1,8 @@
-﻿namespace BadMechanics.PristineEdit.Data.Services
+﻿namespace BadMechanics.PristineEdit.Common.Data
 {
     using System.IO;
+
+    using BadMechanics.PristineEdit.Common.Data.Services;
 
     public class FileServiceClient
     {

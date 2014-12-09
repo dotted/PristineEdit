@@ -4,7 +4,7 @@
     using System.IO;
     using System.Windows.Input;
 
-    using BadMechanics.PristineEdit.Data.Services;
+    using BadMechanics.PristineEdit.Common.Data;
     using BadMechanics.PristineEdit.Win32.Data.Services;
 
     class FileDialogViewModel : ViewModel

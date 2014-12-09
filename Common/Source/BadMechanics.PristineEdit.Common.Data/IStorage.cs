@@ -7,11 +7,9 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace BadMechanics.PristineEdit.Common.Interfaces
+namespace BadMechanics.PristineEdit.Common.Data
 {
     using System;
-
-    using BadMechanics.PristineEdit.Common.Data;
 
     /// <summary>
     /// The Storage interface.

@@ -17,18 +17,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{315AF7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5F83311E-281F-44BC-958E-8149FF2AA8E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Common.Interfaces", "Common\Source\BadMechanics.PristineEdit.Common.Interfaces\BadMechanics.PristineEdit.Common.Interfaces.csproj", "{7573047D-CDA9-4DB7-B36C-356A1AE153ED}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8D28B5CD-F442-42C9-8801-CBF2E3981B43}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Data", "Desktop Client\Source\BadMechanics.PristineEdit.Data\BadMechanics.PristineEdit.Data.csproj", "{0736E9F4-0496-4A62-8181-17334E4BC8D4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Data.Tests", "Desktop Client\Tests\BadMechanics.PristineEdit.Data.Tests\BadMechanics.PristineEdit.Data.Tests.csproj", "{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{1B3070A8-C42E-4551-9A05-893B6528D944}"
 EndProject
@@ -42,7 +36,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Win32.DesktopClient", "Desktop Client\Source\BadMechanics.PristineEdit.Win32.DesktopClient\BadMechanics.PristineEdit.Win32.DesktopClient.csproj", "{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.DesktopClient.Tests", "Desktop Client\Tests\BadMechanics.PristineEdit.Win32.DesktopClient.Tests\BadMechanics.PristineEdit.DesktopClient.Tests.csproj", "{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Win32.DesktopClient.Tests", "Desktop Client\Tests\BadMechanics.PristineEdit.Win32.DesktopClient.Tests\BadMechanics.PristineEdit.Win32.DesktopClient.Tests.csproj", "{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadMechanics.PristineEdit.Win32.Data.Tests", "Desktop Client\Tests\BadMechanics.PristineEdit.Win32.Data.Tests\BadMechanics.PristineEdit.Win32.Data.Tests.csproj", "{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,18 +46,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7573047D-CDA9-4DB7-B36C-356A1AE153ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0736E9F4-0496-4A62-8181-17334E4BC8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0736E9F4-0496-4A62-8181-17334E4BC8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0736E9F4-0496-4A62-8181-17334E4BC8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0736E9F4-0496-4A62-8181-17334E4BC8D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{729D1838-2455-4702-987F-2B9B207D4181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{729D1838-2455-4702-987F-2B9B207D4181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{729D1838-2455-4702-987F-2B9B207D4181}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -82,6 +66,10 @@ Global
 		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,9 +79,6 @@ Global
 		{34E9460F-BA98-4A11-81AE-06FEC91D75B3} = {85877F04-00E4-482A-B418-7BEBECABE750}
 		{83097821-DC82-44A1-B821-B2EFCF857516} = {781924F3-0AC1-4470-8353-26C5118334CD}
 		{315AF74B-221E-490C-A55E-087299DA55E6} = {781924F3-0AC1-4470-8353-26C5118334CD}
-		{7573047D-CDA9-4DB7-B36C-356A1AE153ED} = {1B3070A8-C42E-4551-9A05-893B6528D944}
-		{0736E9F4-0496-4A62-8181-17334E4BC8D4} = {34E9460F-BA98-4A11-81AE-06FEC91D75B3}
-		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD} = {4CA0E95E-C4B3-4E28-8CB6-C940845D9749}
 		{1B3070A8-C42E-4551-9A05-893B6528D944} = {5F83311E-281F-44BC-958E-8149FF2AA8E4}
 		{20B3CA42-C724-4752-A7AF-A7367C62D8E2} = {5F83311E-281F-44BC-958E-8149FF2AA8E4}
 		{729D1838-2455-4702-987F-2B9B207D4181} = {1B3070A8-C42E-4551-9A05-893B6528D944}
@@ -101,5 +86,6 @@ Global
 		{610F71C3-2F65-449E-8C81-2890743E60E1} = {34E9460F-BA98-4A11-81AE-06FEC91D75B3}
 		{3FFDC53A-5DE2-4DFB-9E81-CF4E8AA9DBE2} = {34E9460F-BA98-4A11-81AE-06FEC91D75B3}
 		{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC} = {4CA0E95E-C4B3-4E28-8CB6-C940845D9749}
+		{DBE35813-74F6-4026-AE5C-CBAFF1925EBD} = {4CA0E95E-C4B3-4E28-8CB6-C940845D9749}
 	EndGlobalSection
 EndGlobal
