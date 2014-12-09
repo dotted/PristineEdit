@@ -1,14 +1,11 @@
-﻿using BadMechanics.PristineEdit.DesktopClient.Services;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-
-namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
+﻿namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
 {
+    using System;
+    using System.IO;
+    using System.Windows.Input;
+
+    using BadMechanics.PristineEdit.DesktopClient.Services;
+
     class FileDialogViewModel : ViewModel
     {
         public FileDialogViewModel()
@@ -25,12 +22,12 @@ namespace BadMechanics.PristineEdit.DesktopClient.ViewModels
 
         private void SaveFile()
         {
-            var fileService = PlatformFactory.GetFileService();
+            var fileService = FileServiceFactory.GetFileService();
             this.Stream = fileService.SaveFile(this.Extension, this.Filter);
         }
         private void OpenFile()
         {
-            var fileService = PlatformFactory.GetFileService();
+            var fileService = FileServiceFactory.GetFileService();
             this.Stream = fileService.OpenFile(this.Extension, this.Filter);        
         }
     }

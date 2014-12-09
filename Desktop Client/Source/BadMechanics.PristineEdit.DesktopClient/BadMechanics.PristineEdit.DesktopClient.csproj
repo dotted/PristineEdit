@@ -56,8 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="RelayCommand.cs" />
+    <Compile Include="Services\FileServiceFactory.cs" />
     <Compile Include="Services\IFileService.cs" />
-    <Compile Include="Services\PlatformFactory.cs" />
+    <Compile Include="Services\FileServiceClient.cs" />
     <Compile Include="Services\Win32\Win32FileService.cs" />
     <Compile Include="ViewModel.cs" />
     <Compile Include="ViewModels\FileDialogViewModel.cs" />
@@ -78,6 +79,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
