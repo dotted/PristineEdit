@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-
-
-namespace BadMechanics.PristineEdit.DesktopClient.Services
+﻿namespace BadMechanics.PristineEdit.DesktopClient.Services
 {
+    using System.IO;
+
     public interface IFileService
     {
-        Stream OpenFile(String defaultExtension, String filter);
-        Stream SaveFile(String defaultExtension, String filter);       
-        
+        Stream OpenFile(string defaultExtension, string filter);
+        Stream SaveFile(string defaultExtension, string filter);       
     }
 }
