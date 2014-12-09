@@ -14,6 +14,7 @@
         {
             this.SaveCommand = new RelayCommand(this.SaveFile);
             this.OpenCommand = new RelayCommand(this.OpenFile);
+            this.NewCommand = new RelayCommand(this.NewFile);
         }
 
         public Encoding Encoding 
@@ -46,6 +47,7 @@
         }
         public ICommand OpenCommand { get; set; }
         public ICommand SaveCommand { get; set; }
+        public ICommand NewCommand { get; set; }
 
         private async void OpenFile()
         {
@@ -71,6 +73,11 @@
             {
                 await sr.WriteAsync(this.Text.ToString(CultureInfo.InvariantCulture));
             }       
+        }
+
+        private void NewFile()
+        {
+            this.Text = string.Empty;
         }
     }
 }
