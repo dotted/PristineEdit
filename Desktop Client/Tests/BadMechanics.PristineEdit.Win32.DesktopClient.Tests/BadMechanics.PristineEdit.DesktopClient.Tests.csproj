@@ -7,8 +7,8 @@
     <ProjectGuid>{58133331-2CF7-4A8E-A1E1-8ED5FD33FADC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BadMechanics.PristineEdit.DesktopClient.Tests</RootNamespace>
-    <AssemblyName>BadMechanics.PristineEdit.DesktopClient.Tests</AssemblyName>
+    <RootNamespace>BadMechanics.PristineEdit.Win32.DesktopClient.Tests</RootNamespace>
+    <AssemblyName>BadMechanics.PristineEdit.Win32.DesktopClient.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
