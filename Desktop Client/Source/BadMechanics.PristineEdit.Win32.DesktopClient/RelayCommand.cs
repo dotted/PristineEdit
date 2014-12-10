@@ -32,7 +32,7 @@ namespace BadMechanics.PristineEdit.Win32.DesktopClient
         }
 
         /// <summary>
-        /// Got no clue
+        /// Eventhandler that handles when changes to the command source are detected by the command manager.
         /// </summary>
         public event EventHandler CanExecuteChanged
         {

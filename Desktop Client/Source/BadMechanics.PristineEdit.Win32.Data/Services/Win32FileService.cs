@@ -2,13 +2,18 @@
 {
     using System;
     using System.IO;
-
     using BadMechanics.PristineEdit.Data.Services;
-
     using Microsoft.Win32;
 
     public class Win32FileService : IFileService
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="defaultExtension"></param>
+        /// <param name="filter"></param>
+        /// <returns></returns>
         public Stream OpenFile(string defaultExtension, string filter)
         {
             var dialog = new OpenFileDialog
@@ -26,6 +31,12 @@
 
         }
 
+        /// <summary>
+        /// Th
+        /// </summary>
+        /// <param name="defaultExtension"></param>
+        /// <param name="filter"></param>
+        /// <returns></returns>
         public Stream SaveFile(string defaultExtension, string filter)
         {
             var dialog = new SaveFileDialog
