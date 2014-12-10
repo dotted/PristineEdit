@@ -44,9 +44,9 @@
     <Compile Include="Services\Win32FileService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BadMechanics.PristineEdit.Data\BadMechanics.PristineEdit.Data.csproj">
-      <Project>{0736E9F4-0496-4A62-8181-17334E4BC8D4}</Project>
-      <Name>BadMechanics.PristineEdit.Data</Name>
+    <ProjectReference Include="..\..\..\Common\Source\BadMechanics.PristineEdit.Common.Data\BadMechanics.PristineEdit.Common.Data.csproj">
+      <Project>{729D1838-2455-4702-987F-2B9B207D4181}</Project>
+      <Name>BadMechanics.PristineEdit.Common.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

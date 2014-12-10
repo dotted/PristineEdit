@@ -105,10 +105,6 @@
       <Project>{729d1838-2455-4702-987f-2b9b207d4181}</Project>
       <Name>BadMechanics.PristineEdit.Common.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BadMechanics.PristineEdit.Data\BadMechanics.PristineEdit.Data.csproj">
-      <Project>{0736E9F4-0496-4A62-8181-17334E4BC8D4}</Project>
-      <Name>BadMechanics.PristineEdit.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BadMechanics.PristineEdit.Win32.Data\BadMechanics.PristineEdit.Win32.Data.csproj">
       <Project>{610f71c3-2f65-449e-8c81-2890743e60e1}</Project>
       <Name>BadMechanics.PristineEdit.Win32.Data</Name>

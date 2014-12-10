@@ -7,8 +7,8 @@
     <ProjectGuid>{DBE35813-74F6-4026-AE5C-CBAFF1925EBD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BadMechanics.PristineEdit.Data.Tests</RootNamespace>
-    <AssemblyName>BadMechanics.PristineEdit.Data.Tests</AssemblyName>
+    <RootNamespace>BadMechanics.PristineEdit.Win32.Data.Tests</RootNamespace>
+    <AssemblyName>BadMechanics.PristineEdit.Win32.Data.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

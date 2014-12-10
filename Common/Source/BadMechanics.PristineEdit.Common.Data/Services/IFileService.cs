@@ -1,4 +1,4 @@
-﻿namespace BadMechanics.PristineEdit.Data.Services
+﻿namespace BadMechanics.PristineEdit.Common.Data.Services
 {
     using System.IO;
 
