@@ -36,8 +36,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging.Portable, Version=2.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dependencies\Common.Logging.Portable.2.3.1\lib\net40\Common.Logging.Portable.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Prism.PubSubEvents">
       <HintPath>..\..\..\Dependencies\Prism.PubSubEvents.1.1.2\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dependencies\PCLStorage.1.0.0\lib\net45\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dependencies\PCLStorage.1.0.0\lib\net45\PCLStorage.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -94,6 +106,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -108,9 +121,17 @@
       <Project>{729d1838-2455-4702-987f-2b9b207d4181}</Project>
       <Name>BadMechanics.PristineEdit.Common.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Source\BadMechanics.PristineEdit.Common.Events\BadMechanics.PristineEdit.Common.Events.csproj">
+      <Project>{E8689CA1-005C-4C47-A014-2F4917E7C9D6}</Project>
+      <Name>BadMechanics.PristineEdit.Common.Events</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Common\Source\BadMechanics.PristineEdit.Common.Interfaces\BadMechanics.PristineEdit.Common.Interfaces.csproj">
       <Project>{1D16608B-6E4C-4EA9-9A20-D616F2AD820E}</Project>
       <Name>BadMechanics.PristineEdit.Common.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BadMechanics.PristineEdit.Plugins\BadMechanics.PristineEdit.Plugins.csproj">
+      <Project>{62413701-E5BD-449E-900C-0F3E21065463}</Project>
+      <Name>BadMechanics.PristineEdit.Plugins</Name>
     </ProjectReference>
     <ProjectReference Include="..\BadMechanics.PristineEdit.Win32.Data\BadMechanics.PristineEdit.Win32.Data.csproj">
       <Project>{610f71c3-2f65-449e-8c81-2890743e60e1}</Project>

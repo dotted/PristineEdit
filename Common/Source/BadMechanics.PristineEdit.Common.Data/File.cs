@@ -14,6 +14,8 @@ namespace BadMechanics.PristineEdit.Common.Data
     using System.Text;
     using System.Threading.Tasks;
 
+    using global::Common.Logging;
+
     using PCLStorage;
 
     /// <summary>
@@ -21,6 +23,18 @@ namespace BadMechanics.PristineEdit.Common.Data
     /// </summary>
     public static class File
     {
+        /// <summary>
+        /// The logger
+        /// </summary>
+        private static readonly ILog Log;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        static File()
+        {
+            Log = LogManager.GetCurrentClassLogger();
+        }
         /// <summary>
         /// The open.
         /// </summary>

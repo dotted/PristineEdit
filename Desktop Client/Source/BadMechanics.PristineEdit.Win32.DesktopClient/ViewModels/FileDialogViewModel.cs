@@ -7,8 +7,16 @@
     using BadMechanics.PristineEdit.Common.Data;
     using BadMechanics.PristineEdit.Win32.Data.Services;
 
+    using global::Common.Logging;
+
     class FileDialogViewModel : ViewModel
     {
+        private static readonly ILog Log;
+
+        static FileDialogViewModel()
+        {
+            Log = LogManager.GetCurrentClassLogger();
+        }
         public FileDialogViewModel()
         {
             this.SaveCommand = new RelayCommand(this.SaveFile);

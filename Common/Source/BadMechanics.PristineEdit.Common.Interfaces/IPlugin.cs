@@ -20,10 +20,5 @@ namespace BadMechanics.PristineEdit.Common.Interfaces
         /// Gets the name.
         /// </summary>
         string Name { get; }
-
-        /// <summary>
-        /// The initialize.
-        /// </summary>
-        void Initialize(IEventAggregator eventAggregator);
     }
 }

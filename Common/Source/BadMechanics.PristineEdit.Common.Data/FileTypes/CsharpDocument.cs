@@ -12,15 +12,23 @@ namespace BadMechanics.PristineEdit.Common.Data.FileTypes
     using System.IO;
     using System.Threading.Tasks;
 
+    using global::Common.Logging;
+
     /// <summary>
     /// The C# document.
     /// </summary>
     public class CsharpDocument : Document
     {
+        private static readonly ILog Log;
+
+        static CsharpDocument()
+        {
+            Log = LogManager.GetCurrentClassLogger();
+        }
+
         public CsharpDocument(Task<Stream> backingStream)
             : base(backingStream)
         {
-            
         }
 
         /// <summary>
@@ -32,7 +40,6 @@ namespace BadMechanics.PristineEdit.Common.Data.FileTypes
         public CsharpDocument(Document document)
             : base(document.Stream)
         {
-            
         }
     }
 }

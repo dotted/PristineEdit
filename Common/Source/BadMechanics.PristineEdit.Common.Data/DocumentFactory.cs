@@ -13,11 +13,26 @@ namespace BadMechanics.PristineEdit.Common.Data
 
     using BadMechanics.PristineEdit.Common.Data.FileTypes;
 
+    using global::Common.Logging;
+
     /// <summary>
     /// The document factory.
     /// </summary>
     public static class DocumentFactory
     {
+        /// <summary>
+        /// The logger
+        /// </summary>
+        private static readonly ILog Log;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        static DocumentFactory()
+        {
+            Log = LogManager.GetCurrentClassLogger();
+        }
+
         /// <summary>
         /// The get document.
         /// </summary>
@@ -29,8 +44,11 @@ namespace BadMechanics.PristineEdit.Common.Data
         /// </returns>
         public static Document GetDocument(string filePath)
         {
+            Log.Trace(m => m("Getting document from path: {0}", filePath));
             var explodedFilePath = filePath.Split('.');
+            //Log.Trace(m => m("Exploded path: {0}", explodedFilePath));
             var fileExtension = explodedFilePath.Last();
+            Log.Trace(m => m("Detected file extension: {0}", fileExtension));
 
             switch (fileExtension)
             {

@@ -13,17 +13,32 @@ namespace BadMechanics.PristineEdit.Common.Data
     using System.Text;
     using System.Threading.Tasks;
 
+    using global::Common.Logging;
+
     /// <summary>
     /// The document.
     /// </summary>
     public abstract class Document
     {
         /// <summary>
+        /// 
+        /// </summary>
+        private static readonly ILog Log;
+
+        /// <summary>
         /// The backing stream.
         /// </summary>
         private readonly Task<Stream> backingStream;
 
+        /// <summary>
+        /// the current encoding of the document
+        /// </summary>
         private Encoding encoding;
+
+        static Document()
+        {
+            Log = LogManager.GetCurrentClassLogger();
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Document"/> class.
@@ -43,6 +58,7 @@ namespace BadMechanics.PristineEdit.Common.Data
         {
             get
             {
+                Log.Trace(m => m("Get stream"));
                 return this.backingStream;
             }
         }
@@ -54,6 +70,7 @@ namespace BadMechanics.PristineEdit.Common.Data
         {
             get
             {
+                Log.Trace(m => m("Get encoding"));
                 if (this.encoding == null)
                 {
                     this.encoding = File.DetectTextEncoding(this.backingStream.Result);
@@ -63,6 +80,7 @@ namespace BadMechanics.PristineEdit.Common.Data
             set
             {
                 // TODO: actually convert the text into the new encoding instead of just changing the property
+                Log.Debug(m => m("Set encoding to {0}", value.WebName));
                 this.encoding = value;
             }
         }
@@ -75,6 +93,7 @@ namespace BadMechanics.PristineEdit.Common.Data
         /// </param>
         public async void Write(string text)
         {
+            Log.Debug(m => m("Writing {0} to stream", text));
             var bytes = this.Encoding.GetBytes(text);
             await this.Stream.Result.WriteAsync(bytes, 0, bytes.Length);
         }

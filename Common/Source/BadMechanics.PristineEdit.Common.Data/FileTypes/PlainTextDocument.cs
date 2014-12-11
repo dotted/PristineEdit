@@ -12,11 +12,22 @@ namespace BadMechanics.PristineEdit.Common.Data.FileTypes
     using System.IO;
     using System.Threading.Tasks;
 
+    using global::Common.Logging;
+
     /// <summary>
     /// The plain text document.
     /// </summary>
     public class PlainTextDocument : Document
     {
+        /// <summary>
+        /// The logger
+        /// </summary>
+        private static readonly ILog Log;
+
+        static PlainTextDocument()
+        {
+            Log = LogManager.GetCurrentClassLogger();
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="PlainTextDocument"/> class.
         /// </summary>

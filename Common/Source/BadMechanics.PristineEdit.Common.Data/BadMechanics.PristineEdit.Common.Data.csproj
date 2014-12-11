@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;PORTABLE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -38,15 +38,21 @@
   <ItemGroup>
     <Compile Include="Document.cs" />
     <Compile Include="DocumentFactory.cs" />
+    <Compile Include="ExportableEventAggregator.cs" />
     <Compile Include="File.cs" />
     <Compile Include="FileServiceClient.cs" />
     <Compile Include="FileTypes\CsharpDocument.cs" />
     <Compile Include="FileTypes\PlainTextDocument.cs" />
     <Compile Include="IStorage.cs" />
+    <Compile Include="Loggers\EventAggregatorLogger.cs" />
+    <Compile Include="Loggers\EventAggregatorOutFactoryAdapter.cs" />
     <Compile Include="MimeTypeMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging.Portable">
+      <HintPath>..\..\..\Dependencies\Common.Logging.Portable.2.3.1\lib\portable-win+net40+sl40+wp7\Common.Logging.Portable.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Prism.PubSubEvents">
       <HintPath>..\..\..\Dependencies\Prism.PubSubEvents.1.1.2\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
     </Reference>
@@ -79,6 +85,10 @@
     <Folder Include="Plugins\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BadMechanics.PristineEdit.Common.Events\BadMechanics.PristineEdit.Common.Events.csproj">
+      <Project>{E8689CA1-005C-4C47-A014-2F4917E7C9D6}</Project>
+      <Name>BadMechanics.PristineEdit.Common.Events</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BadMechanics.PristineEdit.Common.Interfaces\BadMechanics.PristineEdit.Common.Interfaces.csproj">
       <Project>{1d16608b-6e4c-4ea9-9a20-d616f2ad820e}</Project>
       <Name>BadMechanics.PristineEdit.Common.Interfaces</Name>
