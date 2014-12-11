@@ -7,9 +7,11 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace BadMechanics.PristineEdit.Common.Data
+namespace BadMechanics.PristineEdit.Common.Interfaces
 {
     using System;
+
+    using BadMechanics.PristineEdit.Common.Data;
 
     /// <summary>
     /// The Storage interface.
@@ -41,7 +43,7 @@ namespace BadMechanics.PristineEdit.Common.Data
         /// The path.
         /// </param>
         /// <returns>
-        /// The <see cref="Document"/>.
+        /// The <see cref="BadMechanics.PristineEdit.Common.Data.Document"/>.
         /// </returns>
         Document Load(string path);
     }

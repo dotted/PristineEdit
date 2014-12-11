@@ -51,9 +51,11 @@
 
         private async void OpenFile()
         {
-            var fileDialog = new FileDialogViewModel();
-            fileDialog.Extension = "*.txt";
-            fileDialog.Filter = "Text documents (.txt)|*.txt";
+            var fileDialog = new FileDialogViewModel
+                                 {
+                                     Extension = "*.txt",
+                                     Filter = "Text documents (.txt)|*.txt"
+                                 };
 
             fileDialog.OpenCommand.Execute(null);
             using (var sr = new StreamReader(fileDialog.Stream, true))
@@ -62,17 +64,24 @@
                 this.Text = await sr.ReadToEndAsync();
             }
         }
-        private async void SaveFile()
+        private void SaveFile()
         {
-            var fileDialog = new FileDialogViewModel();
-            fileDialog.Extension = "*.txt";
-            fileDialog.Filter = "Text documents (.txt)|*.txt";
+            var fileDialog = new FileDialogViewModel
+                                 {
+                                     Extension = "*.txt", 
+                                     Filter = "Text documents (.txt)|*.txt"
+                                 };
 
             fileDialog.SaveCommand.Execute(null);
-            using (var sr = new StreamWriter(fileDialog.Stream, this.Encoding))
+            SaveFile(fileDialog.Stream);
+        }
+
+        private async void SaveFile(Stream file)
+        {
+            using (var sr = new StreamWriter(file, this.Encoding))
             {
                 await sr.WriteAsync(this.Text.ToString(CultureInfo.InvariantCulture));
-            }       
+            }    
         }
 
         private void NewFile()

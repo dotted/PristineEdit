@@ -3,7 +3,7 @@
     using System;
     using System.IO;
 
-    using BadMechanics.PristineEdit.Common.Data.Services;
+    using BadMechanics.PristineEdit.Common.Interfaces.Services;
 
     using Microsoft.Win32;
 

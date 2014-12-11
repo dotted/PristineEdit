@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BadMechanics.PristineEdit.Win32.DesktopClient
+﻿namespace BadMechanics.PristineEdit.Win32.DesktopClient
 {
+    using System.ComponentModel;
+
     public abstract class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void RaisePropertyChanged(string propertyName)
         {
-            PropertyChangedEventHandler handler = this.PropertyChanged;
+            var handler = this.PropertyChanged;
 
             if (handler != null)
             {

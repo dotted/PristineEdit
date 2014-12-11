@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    using BadMechanics.PristineEdit.Common.Data.Services;
+    using BadMechanics.PristineEdit.Common.Interfaces.Services;
 
     public class FileServiceClient
     {

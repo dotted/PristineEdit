@@ -9,6 +9,8 @@
 
 namespace BadMechanics.PristineEdit.Common.Interfaces
 {
+    using Microsoft.Practices.Prism.PubSubEvents;
+
     /// <summary>
     /// The Plugin interface.
     /// </summary>
@@ -20,8 +22,8 @@ namespace BadMechanics.PristineEdit.Common.Interfaces
         string Name { get; }
 
         /// <summary>
-        /// The do.
+        /// The initialize.
         /// </summary>
-        void Do();
+        void Initialize(IEventAggregator eventAggregator);
     }
 }
